@@ -1,33 +1,38 @@
 <div id="loginOfflineContainer" style="display: none;">
-	<div id="loginOfflineCancelContainer">
-		<button id="loginOfflineCancelButton">
-			<span id="loginCancelText">Cancelar</span>
+	<div id="loginCancelContainer">
+		<button id="loginOfflineCancelButton" class="loginCancelButton">
+			<div id="loginCancelIcon">X</div>
+			<span id="loginCancelText"><%- lang('login.loginCancelText') %></span>
 		</button>
 	</div>
 	<div id="loginContent">
 		<form id="loginOfflineForm">
 			<img id="loginImageSeal" src="assets/images/SealCircle.png"/>
-			<span id="loginSubheader">LOGIN PIRATA</span>
+			<span id="loginSubheader"><%- lang('login.loginOfflineSubheader') %></span>
 			<div class="loginFieldContainer">
 				<svg id="profileSVG" class="loginSVG" viewBox="40 37 65.36 61.43">
 					<g>
 						<path d="M86.77,58.12A13.79,13.79,0,1,0,73,71.91,13.79,13.79,0,0,0,86.77,58.12M97,103.67a3.41,3.41,0,0,0,3.39-3.84,27.57,27.57,0,0,0-54.61,0,3.41,3.41,0,0,0,3.39,3.84Z"/>
 					</g>
 				</svg>
-				<input id="loginOfflineUsername" minlength="3" maxlength="14" class="loginField" type="text" placeholder="JOGADOR" style="color: white;"/>
+				<input id="loginOfflineUsername" minlength="3" maxlength="14" class="loginField" type="text" placeholder="<%- lang('login.loginUsernamePlaceholder') %>" />
 			</div>
 			<button id="loginOfflineButton" disabled>
-				<div style="font-size: 14px; font-weight: 700; position: relative; top: 35px; right: 20px;" id="loginButtonContent">
-					LOGIN
-
-					<div class="circle-loader">
-						<div class="checkmark draw"></div>
-					</div>"
+				<div id="loginButtonContent">
+					<%- lang('login.loginButtonText') %>
+                    <svg id="loginSVG" viewBox="0 0 24.87 13.97">
+                        <defs>
+                            <style>.arrowLine{fill:none;stroke:#FFF;stroke-width:2px;transition: 0.25s ease;}</style>
+                        </defs>
+                        <polyline class="arrowLine" points="0.71 13.26 12.56 1.41 24.16 13.02"/>
+                    </svg>
+                    <!-- <div class="circle-loader">
+                        <div class="checkmark draw"></div>
+                    </div> -->
+                    <!--<div class="spinningCircle" id="loginSpinner"></div>-->
 				</div>
 			</button>
 		</form>
 	</div>
 	<script src="./assets/js/scripts/loginOffline.js"></script>
-	<p style="font-size: 14px; position: absolute; top: 470px; right: 395px;"><a style="text-decoration: none; color: rgb(45, 45, 45); font-weight: 700;" href="https://discord.gg/DyquEr2SwW">Problemas ao se conectar?</a></p>
-	
-</div>"
+</div>

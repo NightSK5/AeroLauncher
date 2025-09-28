@@ -377,7 +377,8 @@ body, button {
 }
 
 /* Main login container. */
-#loginContainer {
+#loginContainer,
+#loginOfflineContainer {
     position: relative;
     display: flex;
     justify-content: center;
@@ -396,37 +397,37 @@ body, button {
 }
 
 /* Login cancel button styles. */
-#loginCancelButton {
+.loginCancelButton {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.25s ease;
 }
-#loginCancelButton:hover #loginCancelIcon,
-#loginCancelButton:hover #loginCancelText,
-#loginCancelButton:focus #loginCancelIcon,
-#loginCancelButton:focus #loginCancelText {
+.loginCancelButton:hover #loginCancelIcon,
+.loginCancelButton:hover #loginCancelText,
+.loginCancelButton:focus #loginCancelIcon,
+.loginCancelButton:focus #loginCancelText {
     text-shadow: 0px 0px 20px white;
 }
-#loginCancelButton:hover #loginCancelIcon,
-#loginCancelButton:focus #loginCancelIcon {
+.loginCancelButton:hover #loginCancelIcon,
+.loginCancelButton:focus #loginCancelIcon {
     box-shadow: 0px 0px 20px white;
 }
-#loginCancelButton:active #loginCancelIcon,
-#loginCancelButton:active #loginCancelText {
+.loginCancelButton:active #loginCancelIcon,
+.loginCancelButton:active #loginCancelText {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.75);
 }
-#loginCancelButton:active #loginCancelIcon {
+.loginCancelButton:active #loginCancelIcon {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
 }
-#loginCancelButton:disabled {
+.loginCancelButton:disabled {
     pointer-events: none;
 }
-#loginCancelButton:disabled #loginCancelIcon,
-#loginCancelButton:disabled #loginCancelText {
+.loginCancelButton:disabled #loginCancelIcon,
+.loginCancelButton:disabled #loginCancelText {
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.75);
 }
@@ -460,7 +461,8 @@ body, button {
 }
 
 /* Login form. */
-#loginForm {
+#loginForm,
+#loginOfflineForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -609,7 +611,8 @@ body, button {
 }
 
 /* Login button styles. */
-#loginButton {
+#loginButton,
+#loginOfflineButton {
     background: none;
     font-weight: bold;
     letter-spacing: 2px;
